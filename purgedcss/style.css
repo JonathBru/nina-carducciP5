@@ -6,6 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -41,6 +42,10 @@ body {
 .social-link img {
 	width: 20px;
 	height: 20px;
+}
+/* carousel img ratio*/
+.carousel-item img {
+	aspect-ratio: 240/111;
 }
 
 #about {
