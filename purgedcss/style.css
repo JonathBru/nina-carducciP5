@@ -70,7 +70,7 @@ body {
 
 .picture img {
 	width: 100%;
-
+	aspect-ratio: 1;
 }
 #about-me {
 	flex: 2
