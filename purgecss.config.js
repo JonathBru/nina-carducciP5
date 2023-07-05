@@ -7,7 +7,7 @@ module.exports = {
         deep: [/^col-/],
         greedy: [/^col-/]
       },
-      output: './purgedcss/',
+      output: './assets/purgedcss/',
       variables: true,
 
     }
