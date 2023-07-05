@@ -2,7 +2,6 @@ body {
 	max-width: 1920px;
 	margin: auto;
 	overflow: initial !important;
-	min-height: 100vh;
 }
 * {
 	font-family: 'Inter';
