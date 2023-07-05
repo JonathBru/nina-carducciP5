@@ -42,7 +42,7 @@ body {
 
 .social-link img {
 	width: 20px;
-	height: 20px;
+	aspect-ratio: 1;
 }
 /* carousel img ratio*/
 .carousel-item img {
@@ -91,6 +91,7 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1rem !important;
 }
 #about-me p {
 	width: 80%;
@@ -100,6 +101,7 @@ body {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	font-size: 1.75rem;
 }
 .gallery .nav {
 	justify-content: center;
@@ -157,6 +159,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 2.5rem;
 
 }
 .quote__author {
@@ -265,7 +268,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h2, #about-me p {
 		width: 100%;
 	}
 }
