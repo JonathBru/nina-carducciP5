@@ -2,6 +2,7 @@ body {
 	max-width: 1920px;
 	margin: auto;
 	overflow: initial !important;
+	min-height: 100vh;
 }
 * {
 	font-family: 'Inter';
@@ -12,7 +13,7 @@ body {
 	background-color: white;
 	position: sticky;
 	top:0;
-	z-index: 1000;
+	z-index: 3;
 	display: flex;
 	justify-content: space-between;
 	padding-inline: 100px;
@@ -56,7 +57,9 @@ body {
 	padding-block: 100px;
 	position: relative;
 }
-
+#about .picture {
+	display: inline-block;
+}
 .picture.left::before {
 	content: ' ';
 	background-color: #E5975F;
@@ -79,6 +82,7 @@ body {
 	aspect-ratio: 1;
 }
 #about-me {
+	position: relative;
 	flex: 2
 }
 .about-me__title {
