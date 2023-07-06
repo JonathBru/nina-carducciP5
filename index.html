@@ -3,7 +3,7 @@
 	<head>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Rasa:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Rasa:ital,wght@1,400;1,700&family=Inter:wght@400&display=swap" as="style" media="(min-width:481px)" onload="this.onload=null;this.rel='stylesheet'">
 		<link rel="preload" href="./assets/purgedcss/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 		<link rel="stylesheet" href="./assets/purgedcss/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +42,7 @@
 					<li><a href="#gallery">Galerie</a></li>
 					<li><a href="#services">Service</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li class="social-item"><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Instagram page" loading="eager"></a></li>
+					<li class="social-item"><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Instagram page"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -63,7 +63,7 @@
 							media="(max-width:650px)">
 							<source srcset="./assets/images/slider/nicholas-green1000w.webp"
 							media="(max-width:1000px)">
-							<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="photographie de Concert">
+							<img loading="eager" src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="photographie de Concert">
 						</picture>
 					</div>
 					<div class="carousel-item">
@@ -205,7 +205,7 @@
 		</div>
 	</footer>
 		
-	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+	<script defer src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
 	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script defer src="./assets/scripts.js"></script>
 	<script defer src="./assets/maugallery.js"></script>
