@@ -18,6 +18,7 @@ body {
 	padding-inline: 100px;
 	padding-block: 30px;
 	align-items: center;
+	width: 100%;
 }
 
 .top-header .name {
@@ -25,8 +26,11 @@ body {
 }
 h1 {
 	margin: 0;
+	line-height: 1.5;
 }
-
+.nav{
+	position: relative;
+}
 .nav ul {
 	display: flex;
 	list-style-type: none;
@@ -47,9 +51,14 @@ h1 {
 	display: flex;
 	align-items: center;
 }
+.social-link{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
 .social-link img {
 	width: 20px;
-	aspect-ratio: 20/17;
+	aspect-ratio: 1;
 }
 /* carousel img ratio*/
 .carousel-control-next, .carousel-control-prev  {
