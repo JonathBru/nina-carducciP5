@@ -60,9 +60,6 @@ h1 {
 #carouselExampleIndicators {
 	aspect-ratio: 240/111;
 }
-.carousel-item img {
-	aspect-ratio: 240/111;
-}
 
 #about {
 	display: flex;
