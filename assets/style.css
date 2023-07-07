@@ -1,7 +1,6 @@
 body {
 	max-width: 1920px;
 	margin: auto;
-	overflow: initial !important;
 }
 * {
 	font-family: 'Inter';
@@ -58,6 +57,9 @@ h1 {
 	height: 100%;
 }
 /* carousel img ratio*/
+#carouselExampleIndicators {
+	aspect-ratio: 240/111;
+}
 
 #about {
 	display: flex;
