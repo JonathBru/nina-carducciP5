@@ -67,7 +67,6 @@ h1 {
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
-	height: 760px;
 }
 
 .picture.left::before {
@@ -89,7 +88,7 @@ h1 {
 
 .picture img {
 	width: 100%;
-	aspect-ratio: 1;
+	aspect-ratio: 280/279;
 }
 #about-me {
 	flex: 2
