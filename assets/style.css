@@ -58,12 +58,6 @@ h1 {
 	height: 100%;
 }
 /* carousel img ratio*/
-.carousel-control-next, .carousel-control-prev  {
-	aspect-ratio: 288/888;
-}
-.carousel-item img {
-	aspect-ratio: 240/111;
-}
 
 #about {
 	display: flex;
