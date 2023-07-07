@@ -1,45 +1,68 @@
 body {
 	max-width: 1920px;
 	margin: auto;
+	overflow: initial !important;
 }
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
 .top-header {
 	background-color: white;
 	position: sticky;
-	top:0;
-	z-index: 1000;
+	top: 0;
+	z-index: 3;
 	display: flex;
 	justify-content: space-between;
 	padding-inline: 100px;
 	padding-block: 30px;
 	align-items: center;
+	width: 100%;
 }
 
 .top-header .name {
 	font-size: 26px;
 }
-
+h1 {
+	margin: 0;
+	line-height: 1.5;
+}
+.nav{
+	position: relative;
+}
 .nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
-}
-
-.nav li {
-	padding-inline: 10px;
+	gap: 20px;
 }
 
 .nav a {
 	text-decoration: none;
-	color: #000
+	color: #000;
+	line-height: 0;
 }
-
-.social-link img {
+.social-item {
+	display: flex;
+	align-items: center;
+}
+.social-link{
+	display: inline-block;
 	width: 20px;
+	height: 20px;
+}
+.social-link img {
+	width: 100%;
+	height: 100%;
+}
+/* carousel img ratio*/
+.carousel-control-next, .carousel-control-prev  {
+	aspect-ratio: 288/888;
+}
+.carousel-item img {
+	aspect-ratio: 240/111;
 }
 
 #about {
@@ -48,6 +71,7 @@ body {
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
+	height: 760px;
 }
 
 .picture.left::before {
@@ -69,24 +93,25 @@ body {
 
 .picture img {
 	width: 100%;
+	aspect-ratio: 1;
 }
-
 #about-me {
 	flex: 2
 }
-
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
 	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
-	font-weight: 800;
+	font-family: 'Rasa';
+	font-weight: 700;
 	font-style: italic;
 	width: 60%;
+	font-size: 1.2rem !important;
+	margin-bottom: 0.5rem;
 }
-#about-me p {
+.about-me__description {
 	width: 80%;
 	font-size: 14px;
 }
@@ -94,17 +119,20 @@ body {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	font-size: 1.75rem;
 }
 .gallery .nav {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #6A560B;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000 ;
+	color: #000;
+	cursor: pointer;
+	caret-color: transparent;
 }
 .item-column {
 	position: relative;
@@ -123,6 +151,8 @@ body {
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
+	cursor: pointer;
+	caret-color: transparent;
 }
 .mg-prev, .mg-next {
 	width: 30px;
@@ -132,23 +162,26 @@ body {
 	align-items: center;
 	display: flex;
 	font-size: 24px;
+	cursor: pointer;
+	caret-color: transparent;
 }
 
 .quote {
-	font-family: 'Spectral';
+	font-family: 'Rasa';
 	font-style: italic;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: Rasa;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 2.5rem;
 
 }
 .quote__author {
-	font-family: Spectral;
+	font-family: Rasa;
 	font-weight: 800;
 	font-size: 22px;
 }
@@ -253,7 +286,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h2, #about-me p {
 		width: 100%;
 	}
 }
@@ -316,8 +349,7 @@ input[type="submit"] {
 		z-index: -1;
 	}
 }
-
-@media all and (max-width: 650px) {
+@media all and (max-width: 701px) {
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
@@ -331,6 +363,9 @@ input[type="submit"] {
 		padding-block: 1em;
 		text-align: center;
 	}
+}
+@media all and (max-width: 650px) {
+
 	.picture.left::before, .picture.right::before {
 		height: 150px;
 	}
